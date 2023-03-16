@@ -1,6 +1,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta http-Equiv="Cache-Control" Content="no-cache" />
+<meta http-Equiv="Pragma" Content="no-cache" />
+<meta http-Equiv="Expires" Content="0" />
 </head>
 <style>
 html 
@@ -25,7 +28,7 @@ iframe
 }
 </style>
 <body>
-<iframe id="topServerFrame"
+<iframe id="iframeid"
     src="https://merry-rp-advantage-pope.trycloudflare.com/topserver.html"
     frameborder="0" 
     marginheight="0" 
@@ -34,7 +37,7 @@ iframe
     height="100%" 
     scrolling="auto"></iframe>
 <script>
-  document.getElementById('topServerFrame').contentWindow.location.reload(true);
+  document.getElementById('iframeid').src += `?${(new Date()).getUTCMilliseconds()}`;
 </script>
 </body>
 </html>
